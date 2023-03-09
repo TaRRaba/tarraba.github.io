@@ -1,0 +1,101 @@
+body {
+  background-image: url(/core-css-layout-site/img/background.jpeg);
+}
+
+.logo {
+  border-radius: 50%;
+  margin-left: 200px;
+  margin-right: 250px;
+}
+
+.menu {
+  margin-right: 20px;
+  font-size: larger;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.menu:hover {
+  color: rgb(30, 177, 206);
+}
+
+.photo {
+  margin-left: 200px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+}
+
+.about {
+  font-size: 28px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+.about p {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  text-align: justify;
+  color: black;
+}
+
+.block_header {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(128, 232, 255);
+  margin-top: 50px;
+}
+
+.block_header2 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(128, 232, 255);
+  margin-top: 80px;
+}
+
+.block_header3 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(128, 232, 255);
+  margin-top: 180px;
+}
+
+.block_header4 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(128, 232, 255);
+  margin-top: 310px;
+}
+
+.interests ul,
+.project p {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: justify;
+  color: black;
+  font-size: 28px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.football,
+.ps,
+.planes,
+.projects,
+.work {
+  margin-left: 100px;
+  border-radius: 10px;
+}
