@@ -1,0 +1,198 @@
+body {
+  font-family: "IBM Plex Mono";
+  background: url(../img/background.png) no-repeat;
+  background-color: #4633ad;
+  background-size: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  width: 425px;
+  height: 295px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1 {
+  font-style: normal;
+  color: #b4f7b6;
+  font-size: 30px;
+  font-weight: 450;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  border: 2px #b4f7b6 solid;
+  border-radius: 10px;
+  border-width: 4px;
+}
+
+.chatbox {
+  width: 525px;
+  height: 480px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 0px;
+  border: 2px #6feefb solid;
+  border-radius: 10px 10px;
+  background-color: #6feefb;
+}
+
+.chat {
+  border: 2px #efecf5 solid;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #efecf5;
+  height: 370px;
+  display: flex;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.question {
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: flex-end;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.answer {
+  display: flex;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.botpic,
+.userpic {
+  align-self: end;
+  width: 30px;
+  height: 30px;
+}
+
+.qtext,
+.atext {
+  font-size: 16px;
+  border: 5px white solid;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 330px;
+  word-wrap: break-word;
+}
+
+.buttons {
+  border: 2px #efecf5 solid;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #e9fac0;
+  height: 100px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.format,
+.estimation,
+.getIn,
+.preparation,
+.program,
+.result {
+  border-radius: 5px;
+  border: none;
+  background-color: #f6bb59;
+  font-family: "IBM Plex Mono";
+  font-weight: 400;
+  height: 30px;
+  font-size: 14.8px;
+}
+
+.format:hover,
+.estimation:hover,
+.getIn:hover,
+.preparation:hover,
+.program:hover,
+.result:hover {
+  transform: scale(1.02);
+}
+
+.format:hover:active,
+.estimation:hover:active,
+.getIn:hover:active,
+.preparation:hover:active,
+.program:hover:active,
+.result:hover:active {
+  transform: scale(0.99);
+}
+
+@media (max-width: 1100px) {
+  body {
+    background-size: 700px;
+  }
+
+  .header {
+    width: 220px;
+    height: 170px;
+    margin-left: 20px;
+  }
+
+  .h1 {
+    font-size: 25px;
+    font-weight: 420;
+    line-height: 45px;
+    border-width: 3px;
+  }
+
+  .chatbox {
+    width: 320px;
+    height: 300px;
+    margin-top: 0px;
+    margin-left: 15px;
+  }
+
+  .chat {
+    height: 400px;
+  }
+
+  .question {
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+
+  .answer {
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+
+  .botpic,
+  .userpic {
+    width: 20px;
+    height: 20px;
+  }
+
+  .qtext,
+  .atext {
+    font-size: 12px;
+    max-width: 200px;
+  }
+
+  .buttons {
+    height: 90px;
+  }
+
+  .format,
+  .estimation,
+  .getIn,
+  .preparation,
+  .program,
+  .result {
+    font-weight: 500;
+    height: 15px;
+    font-size: 8px;
+  }
+}
