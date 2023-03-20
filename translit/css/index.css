@@ -1,0 +1,300 @@
+body {
+  font-family: "IBM Plex Mono";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 336px;
+  height: 52px;
+  display: flex;
+  color: #4520ab;
+  margin-top: 44px;
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: -0.08em;
+  text-align: center;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 86px;
+  border: 2px solid #111111;
+  width: 500px;
+  height: 56px;
+  border-radius: 14px;
+}
+
+input {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.05em;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+
+  color: #111111;
+  opacity: 1;
+}
+
+button {
+  background-color: #111111;
+  border-radius: 8px;
+  border: none;
+  margin-right: 9px;
+  width: 107px;
+  height: 38.08px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px 5px;
+  gap: 10px;
+
+  font-family: "IBM Plex Mono";
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.03em;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  width: 500px;
+}
+
+.leftColumn {
+  background-color: #f0f0f0;
+  border-right: 2px solid #111111;
+  border-radius: 8px 0px 0px 8px;
+  width: 250px;
+}
+
+.rightColumn {
+  background-color: rgba(0 0 0 / 0.15);
+  border-radius: 0px 8px 8px 0px;
+  width: 250px;
+}
+
+.rowLeft,
+.rowRight,
+.rowLeftNext,
+.rowRightNext {
+  display: flex;
+  flex-direction: row;
+}
+
+.rowRight,
+.rowRightNext {
+  justify-content: space-between;
+}
+
+.rowLeftNext,
+.rowRightNext {
+  border-top: 1px solid #111111;
+  position: relative;
+}
+
+.number {
+  margin-left: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: -0.05em;
+  color: #111111;
+}
+
+.rus,
+.translit {
+  margin-left: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: -0.03em;
+  color: #111111;
+}
+
+.title,
+.title2 {
+  display: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.03em;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 8px 16px 10px;
+  gap: 10px;
+  position: absolute;
+  z-index: 1;
+  max-width: 133px;
+  max-height: 38px;
+  word-wrap: break-word;
+  line-height: 20px;
+}
+
+.title {
+  bottom: 87%;
+  left: 13%;
+}
+
+.title2 {
+  bottom: 87%;
+  left: 5%;
+}
+
+.svg,
+.defaultSvg {
+  margin-right: 12px;
+  width: 18px;
+}
+
+.svg:hover,
+.defaultSvg:hover {
+  transform: scale(1.12);
+}
+
+.svg:active,
+.defaultSvg:active {
+  transform: scale(0.95);
+}
+
+.eraseAll {
+  margin-top: 60px;
+  background-color: #adadad;
+  width: 176px;
+  height: 38px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.erase {
+  margin-right: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.05em;
+  color: #0f0f0f;
+}
+
+.eraseAllsvg {
+  width: 24px;
+  margin-left: 10px;
+}
+
+.eraseAll:hover {
+  transform: scale(1.05);
+}
+
+.eraseAll:active {
+  transform: scale(1);
+}
+
+.footer {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-top: 20px;
+    font-size: 36px;
+    line-height: 47px;
+    letter-spacing: -0.07em;
+  }
+  .input {
+    margin-top: 76px;
+    width: 328px;
+  }
+
+  input {
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+
+    color: #111111;
+    opacity: 1;
+  }
+
+  button {
+    margin-right: 8px;
+    height: 38px;
+  }
+
+  .box {
+    margin-top: 50px;
+    width: 328px;
+  }
+
+  .leftColumn {
+    width: 164px;
+  }
+
+  .rightColumn {
+    width: 164px;
+  }
+
+  .rus,
+  .translit {
+    margin-left: 16px;
+  }
+
+  .title,
+  .title2 {
+    font-size: 14px;
+    max-width: 100px;
+    max-height: 30px;
+    line-height: 15px;
+  }
+
+  .title {
+    left: 15%;
+  }
+
+  .svg,
+  .defaultSvg {
+    margin-right: 8px;
+    width: 24px;
+  }
+
+  .svg:hover,
+  .defaultSvg:hover {
+    transform: scale(1.1);
+  }
+
+  .svg:active,
+  .defaultSvg:active {
+    transform: scale(0.95);
+  }
+
+  .eraseAll {
+    margin-top: 40px;
+  }
+
+  .eraseAll:hover {
+    transform: scale(1.03);
+  }
+}
