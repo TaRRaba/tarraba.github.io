@@ -1,0 +1,122 @@
+body {
+  background: #6bdab6;
+  z-index: 1;
+  position: absolute;
+}
+
+.logo {
+  width: 150px;
+  position: absolute;
+  left: 60px;
+  top: 60px;
+}
+
+.background {
+  width: 1440px;
+  margin-top: 95px;
+  position: relative;
+  z-index: 2;
+}
+
+img {
+  width: 30px;
+  position: absolute;
+  z-index: 4;
+}
+
+.level {
+  color: red;
+  font-size: x-large;
+  position: absolute;
+  z-index: 3;
+}
+
+.lvl0 {
+  bottom: 0%;
+  left: 9.5%;
+  display: block;
+}
+
+.id1 {
+  bottom: 19%;
+  left: 18.5%;
+}
+
+.lvl1 {
+  bottom: 13%;
+  left: 18.5%;
+  display: none;
+}
+
+.id2 {
+  bottom: 37%;
+  left: 26.5%;
+}
+
+.lvl2 {
+  bottom: 31%;
+  left: 26.5%;
+  display: none;
+}
+
+.id3 {
+  bottom: 44%;
+  left: 35%;
+}
+
+.lvl3 {
+  bottom: 38%;
+  left: 35%;
+  display: none;
+}
+
+.id4 {
+  bottom: 57.5%;
+  left: 38%;
+}
+
+.lvl4 {
+  bottom: 51.5%;
+  left: 38%;
+  display: none;
+}
+
+.id5 {
+  bottom: 54.5%;
+  left: 47%;
+}
+
+.lvl5 {
+  bottom: 48.5%;
+  left: 47%;
+  display: none;
+}
+
+.id6 {
+  bottom: 62.5%;
+  left: 55%;
+}
+
+.lvl6 {
+  bottom: 56.5%;
+  left: 55%;
+  display: none;
+}
+
+.id7 {
+  bottom: 80%;
+  left: 65%;
+}
+
+.lvl7 {
+  bottom: 74%;
+  left: 65%;
+  display: none;
+}
+
+.win {
+  width: 50px;
+  bottom: 81%;
+  left: 63%;
+  display: none;
+}
