@@ -1,0 +1,302 @@
+body {
+  background: #141414;
+  font-family: "IBM Plex Mono";
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: hsl(256, 68%, 40%);
+}
+
+.search {
+  display: none;
+}
+
+.mobile_menu {
+  display: none;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.menu ul li {
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+}
+
+li.yellow a {
+  display: flex;
+  color: #ffbc5b;
+}
+
+li.yellow {
+  border-bottom-width: 2px;
+  border-bottom-color: #ffbc5b;
+  border-bottom-style: solid;
+}
+
+li {
+  border-bottom-width: 2px;
+  border-bottom-color: hsl(256, 68%, 40%);
+  border-bottom-style: solid;
+}
+
+.menu a {
+  color: #ffffff4d;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 425;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
+
+.menu svg {
+  opacity: 0.3;
+  stroke: white;
+}
+
+.menu svg:hover {
+  opacity: 1;
+  stroke: #ffbc5b;
+}
+
+.menu a:hover {
+  color: #ffbc5b;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recommend {
+  margin-top: 30px;
+}
+
+.news_top,
+.recommend_top {
+  display: flex;
+  margin-top: 50px;
+}
+
+.news_top h2,
+.recommend_top h2 {
+  color: #ffbc5b;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 39px;
+  letter-spacing: -0.04em;
+}
+
+.news_top::after,
+.recommend_top::after {
+  content: url(../img/arrow-s.png);
+  margin-left: 20px;
+  margin-top: 35px;
+}
+
+.news_films,
+.recommend_films {
+  display: flex;
+  flex-direction: row;
+}
+
+.news_films::after {
+  content: url(../img/arrow-b.png);
+  margin-top: 85px;
+  margin-left: 20px;
+}
+
+.recommend_films::after {
+  content: url(../img/arrow-b.png);
+  margin-top: 240px;
+  margin-left: 20px;
+}
+
+.link {
+  text-decoration: none;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.new_film_block,
+.recommend_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.raiting {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffbc5b;
+  color: black;
+  border-radius: 6px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  margin: 10px 0 0 10px;
+  z-index: 111;
+}
+
+.new_film_background {
+  width: 322px;
+  height: 182px;
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.recommend_background {
+  width: 322px;
+  height: 485px;
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.new_film_block:hover .new_film_background,
+.recommend_block:hover .recommend_background {
+  transform: scale(1.02);
+}
+
+.new_film_block:hover .new_film_about h3,
+.recommend_block:hover .recommend_about h3 {
+  color: white;
+}
+
+.new_film_about,
+.recommend_about {
+  padding-top: 15px;
+}
+
+.new_film_about h3,
+.recommend_about h3 {
+  color: #989898;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.new_film_about p,
+.recommend_about p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #515151;
+  padding-top: 10px;
+}
+
+.footer {
+  margin-top: 80px;
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  #strange,
+  #glass {
+    display: none;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+  .user img {
+    width: 40px;
+  }
+
+  .news_top h2,
+  .recommend_top h2 {
+    font-size: 26px;
+  }
+
+  .news_top::after,
+  .recommend_top::after {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .header {
+    justify-content: flex-end;
+  }
+
+  .logo {
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  .logo img {
+    width: 110px;
+  }
+
+  .user img {
+    width: 40px;
+  }
+
+  .search img {
+    width: 23px;
+  }
+
+  .search {
+    display: block;
+    margin-right: 25px;
+  }
+
+  .user {
+    margin-right: 25px;
+  }
+
+  .mobile_menu {
+    display: block;
+    margin-right: 25px;
+  }
+
+  .news_top h2,
+  .recommend_top h2 {
+    font-size: 23px;
+  }
+
+  .news_films::after,
+  .recommend_films::after {
+    content: url(../img/arrow-s.png);
+    margin-left: 10px;
+  }
+
+  #strange,
+  #glass,
+  #brooklyn,
+  #starwars {
+    display: none;
+  }
+
+  .news_top::after,
+  .recommend_top::after {
+    display: none;
+  }
+}
