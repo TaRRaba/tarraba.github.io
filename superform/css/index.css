@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "IBM Plex Mono";
+  background: wheat;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 40px;
+  text-shadow: 2px 2px white;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+input {
+  display: block;
+  height: 30px;
+  font-family: "IBM Plex Mono";
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+input:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.btn {
+  height: 40px;
+  background: green;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  outline: 1px solid green;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: "IBM Plex Mono";
+}
+
+.btn:hover {
+  transform: scale(1.02);
+}
+
+.btn:hover:active {
+  transform: scale(1);
+}
+
+.clear {
+  background: rgb(210, 29, 29);
+  outline: 1px solid rgb(210, 29, 29);
+  width: 50vw;
+}
+
+.mainUsers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+}
+
+.user {
+  background-color: #f5f1f1;
+  width: 40vw;
+  margin-bottom: 10px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.user-outer {
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.delete,
+.change {
+  border: none;
+  height: 40%;
+  color: white;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.delete {
+  background: brown;
+}
+
+.delete:hover {
+  transform: scale(1.05);
+}
+
+.delete:hover:active {
+  transform: scale(0.97);
+}
+
+.change {
+  background: darkcyan;
+}
+
+.change:hover {
+  transform: scale(1.05);
+}
+
+.change:hover:active {
+  transform: scale(0.97);
+}
