@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/favicon-sudoku.png" type="image/png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./index.js"></script>
+
+    <title>数独アニメの少年</title>
+  </head>
+  <body>
+
+    <div class="container">
+      
+      <h1>数独アニメの少年</h1>
+
+      <table id="grid">
+
+        <tr>
+          <td><div class="box" id="cell-0"></div></td>
+          <td><div class="box" id="cell-1"></div></td>
+          <td><div class="box" id="cell-2"></div></td>
+          
+          <td><div class="box" id="cell-3"></div></td>
+          <td><div class="box" id="cell-4"></div></td>
+          <td><div class="box" id="cell-5"></div></td>
+          
+          <td><div class="box" id="cell-6"></div></td>
+          <td><div class="box" id="cell-7"></div></td>
+          <td><div class="box" id="cell-8"></div></td>
+        </tr>
+
+        <tr>
+          <td><div class="box" id="cell-9"></div></td>
+          <td><div class="box" id="cell-10"></div></td>
+          <td><div class="box" id="cell-11"></div></td>
+          
+          <td><div class="box" id="cell-12"></div></td>
+          <td><div class="box" id="cell-13"></div></td>
+          <td><div class="box" id="cell-14"></div></td>
+          
+          <td><div class="box" id="cell-15"></div></td>
+          <td><div class="box" id="cell-16"></div></td>
+          <td><div class="box" id="cell-17"></div></td>
+        </tr>
+
+        <tr>          
+          <td><div class="box" id="cell-18"></div></td>
+          <td><div class="box" id="cell-19"></div></td>
+          <td><div class="box" id="cell-20"></div></td>
+          
+          <td><div class="box" id="cell-21"></div></td>
+          <td><div class="box" id="cell-22"></div></td>
+          <td><div class="box" id="cell-23"></div></td>
+          
+          <td><div class="box" id="cell-24"></div></td>
+          <td><div class="box" id="cell-25"></div></td>
+          <td><div class="box" id="cell-26"></div></td>
+        </tr>
+
+        <tr>          
+          <td><div class="box" id="cell-27"></div></td>
+          <td><div class="box" id="cell-28"></div></td>
+          <td><div class="box" id="cell-29"></div></td>
+          
+          <td><div class="box" id="cell-30"></div></td>
+          <td><div class="box" id="cell-31"></div></td>
+          <td><div class="box" id="cell-32"></div></td>
+          
+          <td><div class="box" id="cell-33"></div></td>
+          <td><div class="box" id="cell-34"></div></td>
+          <td><div class="box" id="cell-35"></div></td>
+        </tr>
+
+        <tr>          
+          <td><div class="box" id="cell-36"></div></td>
+          <td><div class="box" id="cell-37"></div></td>
+          <td><div class="box" id="cell-38"></div></td>
+          
+          <td><div class="box" id="cell-39"></div></td>
+          <td><div class="box" id="cell-40"></div></td>
+          <td><div class="box" id="cell-41"></div></td>
+          
+          <td><div class="box" id="cell-42"></div></td>
+          <td><div class="box" id="cell-43"></div></td>
+          <td><div class="box" id="cell-44"></div></td>
+        </tr>
+
+        <tr>          
+          <td><div class="box" id="cell-45"></div></td>
+          <td><div class="box" id="cell-46"></div></td>
+          <td><div class="box" id="cell-47"></div></td>
+          
+          <td><div class="box" id="cell-48"></div></td>
+          <td><div class="box" id="cell-49"></div></td>
+          <td><div class="box" id="cell-50"></div></td>
+          
+          <td><div class="box" id="cell-51"></div></td>
+          <td><div class="box" id="cell-52"></div></td>
+          <td><div class="box" id="cell-53"></div></td>
+        </tr>
+
+        <tr>          
+          <td><div class="box" id="cell-54"></div></td>
+          <td><div class="box" id="cell-55"></div></td>
+          <td><div class="box" id="cell-56"></div></td>
+          
+          <td><div class="box" id="cell-57"></div></td>
+          <td><div class="box" id="cell-58"></div></td>
+          <td><div class="box" id="cell-59"></div></td>
+          
+          <td><div class="box" id="cell-60"></div></td>
+          <td><div class="box" id="cell-61"></div></td>
+          <td><div class="box" id="cell-62"></div></td>
+        </tr>
+
+        <tr>          
+          <td><div class="box" id="cell-63"></div></td>
+          <td><div class="box" id="cell-64"></div></td>
+          <td><div class="box" id="cell-65"></div></td>
+          
+          <td><div class="box" id="cell-66"></div></td>
+          <td><div class="box" id="cell-67"></div></td>
+          <td><div class="box" id="cell-68"></div></td>
+          
+          <td><div class="box" id="cell-69"></div></td>
+          <td><div class="box" id="cell-70"></div></td>
+          <td><div class="box" id="cell-71"></div></td>
+        </tr>
+
+        <tr>          
+          <td><div class="box" id="cell-72"></div></td>
+          <td><div class="box" id="cell-73"></div></td>
+          <td><div class="box" id="cell-74"></div></td>
+          
+          <td><div class="box" id="cell-75"></div></td>
+          <td><div class="box" id="cell-76"></div></td>
+          <td><div class="box" id="cell-77"></div></td>
+          
+          <td><div class="box" id="cell-78"></div></td>
+          <td><div class="box" id="cell-79"></div></td>
+          <td><div class="box" id="cell-80"></div></td>
+        </tr>
+
+      </table>
+
+    </div>
+    <div class="buttons">
+        <button id="easy">Easy</button>
+        <button id="medium">Medium</button>
+        <button id="hard">Hard</button>
+    </div>
+    <div class="solve">
+        <button id="solve">Solve</button>
+    </div>
+    <div class="solved">Судоку решен!</div>
+    <footer></footer>
+
+  </body>
+</html>
